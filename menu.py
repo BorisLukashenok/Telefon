@@ -1,11 +1,11 @@
 import readandwrite
-import scan
+import printdist
 
 
 file_bok_str = 'Book1.txt'
 file_bok_list = 'Book2.txt'
 
-dict_command = {'1':  scan, '2': readandwrite.addcontactstr}
+dict_command = {'1':  printdist, '2': readandwrite.addcontactstr}
 print('''Команды для работы со справочником:
      Выход из программы: 0 или Enter
      Просмотр всех записей обоих справочников:  - 1
