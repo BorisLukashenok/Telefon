@@ -30,12 +30,10 @@ def write_new_contact_list(book):
 
 
 def change_contact_str(book):
-    repl = replace_contact(book['str'])
-    print(repl)
+    repl = replace_contact(book['str'])    
     with open(file_book_str, "r", encoding="utf_8") as r:
         allfile = r.read()
     allfile = allfile.replace(repl[1], ', '.join(repl[0],))
-    print(allfile)
     with open(file_book_str, "w", encoding="utf_8") as s:
         s.write(allfile)
     book['str'] = readfile_str(file_book_str)
