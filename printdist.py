@@ -7,10 +7,7 @@ def print_list(data):
     print("-" * 22)
     for i in data:
         if i != '':
-            for j in i.split(', '):                
+            for j in i.split(', '):
                 print(f'|| {j}' + " " * (22 - len(j) - 5) + "||")
             print("-" * 22)
             print("-" * 22)
-
-
-
